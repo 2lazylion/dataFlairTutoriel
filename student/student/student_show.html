@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_Show</title>
+</head>
+<body>
+    <!-- titre -->
+    <h1>The Students Here at Dataflair</h1>
+
+    <!-- liste des étudiants -->
+    <div>
+        <ul>
+            {% for stud in student %}
+            <li>
+                <h2>Name: {{ stud.name }}</h2>
+                <p>Departement: {{ stud.department }}</p>
+                <p>Class: {{ stud.stud_class }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

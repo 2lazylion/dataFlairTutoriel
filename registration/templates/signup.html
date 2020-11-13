@@ -1,0 +1,24 @@
+{# TODO: enlever la base, garde selement le form #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre><center>
+        <h1>Registration Form</h1>
+        <h3>DataFalir Django Tutorials</h3>
+        <h2>{{ html }}</h2>
+        <form action="" method="POST">
+            <!-- Very important Cross-site Request Forgery Token -->
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            <input type="submit" value="register">
+        </form>
+    </center></pre>
+</body>
+</html>
